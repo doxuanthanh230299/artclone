@@ -4,12 +4,12 @@
   box-sizing: border-box;
 }
 
-.primary-color {
-  color: #b89e4f;
+a {
+  text-decoration: none;
 }
 
-.header {
-  display: flex;
+.primary-color {
+  color: #b89e4f;
 }
 
 .section-1 {
@@ -45,24 +45,19 @@
   background-color: #fff;
   padding: 60px 60px;
   text-align: center;
-}
-
-.title-section-2 {
-  width: 100%;
   position: relative;
-  margin-bottom: 80px;
 }
 
-.title-section-2::after {
+.container-section-2 .title::after {
   content: "";
   position: absolute;
   display: block;
   border-left: 1px solid currentColor;
-  height: 4em;
+  height: 3rem;
   max-height: 7rem;
   margin-top: 1rem;
   border-color: rgba(184, 157, 79, 1);
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(50%, 50%);
 }
@@ -95,31 +90,21 @@
 .section-3 {
   background-color: #fff;
   padding: 60px 60px;
-}
-
-.title-section-3 {
-  text-align: center;
-  width: 100%;
   position: relative;
-  margin-bottom: 110px;
 }
 
-.title-section-3::after {
+.container-section-3 .title::after {
   content: "";
   position: absolute;
   display: block;
   border-left: 1px solid currentColor;
-  height: 4em;
+  height: 3rem;
   max-height: 7rem;
   margin-top: 1rem;
   border-color: rgba(184, 157, 79, 1);
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(50%, 50%);
-}
-
-.content-section-3 {
-  margin-top: 40px;
 }
 
 .img-section-3 {
@@ -129,19 +114,10 @@
 .section-4 {
   background-color: #f1f1f1;
   padding: 60px 60px;
-}
-
-.title-section-4 {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.content-section-4 {
   text-align: center;
 }
 
-.content-section-4 img {
+.event-section-4 img {
   max-width: 442px;
   display: block;
 }
@@ -164,25 +140,22 @@
 }
 
 .section-5 {
-  padding: 100px ;
-}
-
-a {
-  text-decoration: none;
+  padding: 100px;
 }
 
 .section-5 img {
   max-width: 95%;
 }
 
-
 .section-6 {
-  padding: 100px ;
+  padding: 100px;
   text-align: center;
 }
 
-.title-section-6 {
+.header {
+  display: block;
   margin-bottom: 80px;
+  text-align: center;
 }
 
 .section-6 img {
@@ -191,16 +164,15 @@ a {
 
 .footer {
   background-color: #000;
-
 }
 
 .container {
-  color: rgba(167,167,167,1);
+  color: rgba(167, 167, 167, 1);
   padding: 0 60px;
 }
 
 .nav-item {
-
+  padding: 4px 20px;
 }
 
 .navbar-footer {
