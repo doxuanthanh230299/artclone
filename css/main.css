@@ -4,27 +4,38 @@
   box-sizing: border-box;
 }
 
+.title {
+  position: relative;
+  font-size: 4rem;
+}
+
+.section {
+  padding: 60px 60px;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+
 .section-1 {
   background-color: #f1f1f1;
-}
-.section-1 .container {
-  padding: 60px 60px;
+  margin-top: 60px;
 }
 .section-1 .container .left {
   position: relative;
 }
 .section-1 .container .left .header {
   position: absolute;
-  width: 70%;
+  width: 100%;
   top: 20%;
   left: 100%;
   transform: translate(-50%, -50%);
 }
 .section-1 .container .left .body {
   position: absolute;
-  width: 90%;
-  top: 50%;
-  left: 50%;
+  width: 100%;
+  top: 60%;
+  left: 40%;
   transform: translate(-50%, -50%);
 }
 .section-1 .container .right img {
@@ -33,12 +44,7 @@
 
 .section-2 {
   background-color: #fff;
-  padding: 60px 60px;
   text-align: center;
-}
-.section-2 .title {
-  position: relative;
-  font-size: 6rem;
 }
 .section-2 .title::after {
   content: "";
@@ -56,19 +62,19 @@
 .section-2 .body {
   margin-top: 60px;
 }
-.section-2 .item {
+.section-2 .body .item {
   margin: 40px;
   border: none;
   align-items: center;
 }
-.section-2 .item img {
+.section-2 .body .item img {
   width: 269px;
 }
-.section-2 .header {
+.section-2 .body .header {
   font-size: 1.4rem;
   margin-top: 50px;
 }
-.section-2 .date {
+.section-2 .body .date {
   font-size: 0.9rem;
   color: rgb(184, 157, 79);
 }
@@ -81,6 +87,115 @@
 .section-2 .button:hover {
   color: #bf392b;
   background-color: #ffe0e0;
+}
+
+.section-3 {
+  background-color: #fff;
+  text-align: center;
+}
+.section-3 .title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-left: 1px solid currentColor;
+  height: 4rem;
+  max-height: 7rem;
+  margin-top: 1rem;
+  border-color: rgb(184, 157, 79);
+  top: 80%;
+  left: 50%;
+  transform: translate(50%, 50%);
+}
+.section-3 .body {
+  margin-top: 100px;
+}
+.section-3 .body .description {
+  text-align: left;
+}
+.section-3 .body img {
+  width: 285px;
+}
+
+.section-4 {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.section-4 .item {
+  padding: 60px 100px;
+  text-align: left;
+}
+.section-4 .item .date {
+  font-size: 1rem;
+  color: rgb(184, 157, 79);
+}
+.section-4 .item .title {
+  font-size: 3rem;
+}
+.section-4 .item .description {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.section-4 .item img {
+  max-width: 442px;
+  display: block;
+}
+.section-4 .button {
+  margin: 20px 0;
+  color: rgb(184, 157, 79);
+  padding: 10px 20px;
+  border: 1px solid rgb(184, 157, 79);
+}
+.section-4 .button:hover {
+  color: #fff;
+  background-color: rgb(184, 157, 79);
+}
+
+.section-5 .header {
+  font-size: 3.6rem;
+}
+.section-5 a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgb(184, 157, 79);
+}
+.section-5 img {
+  max-width: 95%;
+}
+
+.section-6 {
+  text-align: center;
+}
+.section-6 .header {
+  display: block;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.section-6 img {
+  max-width: 95%;
+}
+.section-6 .button {
+  margin: 60px 0 20px;
+  color: rgb(184, 157, 79);
+  padding: 10px 20px;
+  border: 1px solid rgb(184, 157, 79);
+}
+.section-6 .button:hover {
+  color: #fff;
+  background-color: rgb(184, 157, 79);
+}
+
+.footer {
+  background-color: #000;
+}
+.footer .container {
+  color: rgb(167, 167, 167);
+  padding: 0 60px;
+}
+.footer .navbar-footer {
+  padding: 30px 0;
+}
+.footer .content-footer {
+  padding: 40px 0 60px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,18 +4,30 @@
   box-sizing: border-box;
 }
 
+.title {
+  position: relative;
+  font-size: 4rem;
+}
+
+.section {
+  padding: 60px 60px;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+
 .section-1 {
   background-color: #f1f1f1;
+  margin-top: 60px;
 
   .container {
-    padding: 60px 60px;
-
     .left {
       position: relative;
 
       .header {
         position: absolute;
-        width: 70%;
+        width: 100%;
         top: 20%;
         left: 100%;
         transform: translate(-50%, -50%);
@@ -23,9 +35,9 @@
 
       .body {
         position: absolute;
-        width: 90%;
-        top: 50%;
-        left: 50%;
+        width: 100%;
+        top: 60%;
+        left: 40%;
         transform: translate(-50%, -50%);
       }
     }
@@ -40,50 +52,46 @@
 
 .section-2 {
   background-color: #fff;
-  padding: 60px 60px;
   text-align: center;
 
   .title {
-    position: relative;
-    font-size: 6rem;
-  }
-
-  .title::after {
-    content: "";
-    position: absolute;
-    display: block;
-    border-left: 1px solid currentColor;
-    height: 4rem;
-    max-height: 7rem;
-    margin-top: 1rem;
-    border-color: rgba(184, 157, 79, 1);
-    top: 60%;
-    left: 50%;
-    transform: translate(50%, 50%);
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border-left: 1px solid currentColor;
+      height: 4rem;
+      max-height: 7rem;
+      margin-top: 1rem;
+      border-color: rgba(184, 157, 79, 1);
+      top: 60%;
+      left: 50%;
+      transform: translate(50%, 50%);
+    }
   }
 
   .body {
     margin-top: 60px;
-  }
 
-  .item {
-    margin: 40px;
-    border: none;
-    align-items: center;
+    .item {
+      margin: 40px;
+      border: none;
+      align-items: center;
 
-    img {
-      width: 269px;
+      img {
+        width: 269px;
+      }
     }
-  }
 
-  .header {
-    font-size: 1.4rem;
-    margin-top: 50px;
-  }
+    .header {
+      font-size: 1.4rem;
+      margin-top: 50px;
+    }
 
-  .date {
-    font-size: 0.9rem;
-    color: rgba(184, 157, 79, 1);
+    .date {
+      font-size: 0.9rem;
+      color: rgba(184, 157, 79, 1);
+    }
   }
 
   .button {
@@ -96,5 +104,138 @@
       color: #bf392b;
       background-color: #ffe0e0;
     }
+  }
+}
+
+.section-3 {
+  background-color: #fff;
+  text-align: center;
+
+  .title {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border-left: 1px solid currentColor;
+      height: 4rem;
+      max-height: 7rem;
+      margin-top: 1rem;
+      border-color: rgba(184, 157, 79, 1);
+      top: 80%;
+      left: 50%;
+      transform: translate(50%, 50%);
+    }
+  }
+
+  .body {
+    margin-top: 100px;
+
+    .description {
+      text-align: left;
+    }
+
+    img {
+      width: 285px;
+    }
+  }
+}
+
+.section-4 {
+  background-color: #f1f1f1;
+  text-align: center;
+
+  .item {
+    padding: 60px 100px;
+    text-align: left;
+
+    .date {
+      font-size: 1rem;
+      color: rgba(184, 157, 79, 1);
+    }
+
+    .title {
+      font-size: 3rem;
+    }
+
+    .description {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+
+    img {
+      max-width: 442px;
+      display: block;
+    }
+  }
+
+  .button {
+    margin: 20px 0;
+    color: rgba(184, 157, 79, 1);
+    padding: 10px 20px;
+    border: 1px solid rgba(184, 157, 79, 1);
+
+    &:hover {
+      color: #fff;
+      background-color: rgba(184, 157, 79, 1);
+    }
+  }
+}
+
+.section-5 {
+  .header {
+    font-size: 3.6rem;
+  }
+
+  a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: rgba(184, 157, 79, 1);
+  }
+
+  img {
+    max-width: 95%;
+  }
+}
+
+.section-6 {
+  text-align: center;
+
+  .header {
+    display: block;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  img {
+    max-width: 95%;
+  }
+
+  .button {
+    margin: 60px 0 20px;
+    color: rgba(184, 157, 79, 1);
+    padding: 10px 20px;
+    border: 1px solid rgba(184, 157, 79, 1);
+
+    &:hover {
+      color: #fff;
+      background-color: rgba(184, 157, 79, 1);
+    }
+  }
+}
+
+.footer {
+  background-color: #000;
+
+  .container {
+    color: rgba(167, 167, 167, 1);
+    padding: 0 60px;
+  }
+
+  .navbar-footer {
+    padding: 30px 0;
+  }
+
+  .content-footer {
+    padding: 40px 0 60px;
   }
 }
