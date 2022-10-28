@@ -44,7 +44,7 @@
 
     .right {
       img {
-        width: 871px;
+        width: 100%;
       }
     }
   }
@@ -237,5 +237,181 @@
 
   .content-footer {
     padding: 40px 0 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section {
+    padding: 10px;
+  }
+
+  .container {
+    max-width: none;
+  }
+
+  .nav-item {
+    padding: 0 6px;
+    font-size: 0.8rem;
+    display: inline-block;
+  }
+
+  .section-1 {
+    background-color: #f1f1f1;
+    margin-top: 60px;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+
+      .col {
+        flex: auto;
+      }
+      .left {
+        position: static;
+
+        .header {
+          position: static;
+          transform: none;
+        }
+
+        .body {
+          position: static;
+          transform: none;
+        }
+      }
+
+      .right {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .section-2 {
+    .body {
+      .col {
+        flex: auto;
+      }
+
+      .header {
+        margin-top: 16px;
+      }
+
+      .item {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .section-3 {
+    .body {
+      .col {
+        flex: auto;
+      }
+
+      .description {
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .section-4 {
+    padding: 60px 0;
+
+    .container {
+      max-width: none;
+    }
+
+    .item {
+      text-align: center;
+      align-items: center;
+      padding: 20px;
+
+      .date {
+        margin-top: 10px;
+      }
+
+      .title {
+        font-size: 2rem;
+      }
+
+      img {
+        max-width: none;
+        width: 100%;
+      }
+    }
+    .row {
+      margin: 0;
+    }
+    .col {
+      flex: auto;
+    }
+  }
+
+  .section-5 {
+    text-align: center;
+
+    .title {
+      font-size: 3rem;
+    }
+
+    .description {
+      margin: 16px 0;
+
+      h4 {
+        font-size: 1.4rem;
+        margin: 16px 0;
+      }
+    }
+
+    .col-4 {
+      flex: auto;
+      width: 100%;
+    }
+
+    .col-8 {
+      flex: auto;
+      width: 100%;
+    }
+
+    img {
+      max-width: 95%;
+    }
+  }
+
+  .section-6 {
+    .image {
+      margin: 32px 0;
+    }
+
+    .col {
+      flex: auto;
+    }
+  }
+
+  .footer {
+    .container {
+      text-align: center;
+    }
+
+    .collapse:not(.show) {
+      display: flex;
+    }
+
+    .navbar-nav {
+      display: inline-block;
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
 }

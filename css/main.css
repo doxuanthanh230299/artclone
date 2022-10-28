@@ -39,7 +39,7 @@
   transform: translate(-50%, -50%);
 }
 .section-1 .container .right img {
-  width: 871px;
+  width: 100%;
 }
 
 .section-2 {
@@ -196,6 +196,133 @@
 }
 .footer .content-footer {
   padding: 40px 0 60px;
+}
+
+@media (max-width: 1200px) {
+  .section {
+    padding: 10px;
+  }
+  .container {
+    max-width: none;
+  }
+  .nav-item {
+    padding: 0 6px;
+    font-size: 0.8rem;
+    display: inline-block;
+  }
+  .section-1 {
+    background-color: #f1f1f1;
+    margin-top: 60px;
+  }
+  .section-1 .container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .section-1 .container .col {
+    flex: auto;
+  }
+  .section-1 .container .left {
+    position: static;
+  }
+  .section-1 .container .left .header {
+    position: static;
+    transform: none;
+  }
+  .section-1 .container .left .body {
+    position: static;
+    transform: none;
+  }
+  .section-1 .container .right img {
+    width: 100%;
+  }
+  .section-2 .body .col {
+    flex: auto;
+  }
+  .section-2 .body .header {
+    margin-top: 16px;
+  }
+  .section-2 .body .item img {
+    width: 100%;
+  }
+  .section-3 .body .col {
+    flex: auto;
+  }
+  .section-3 .body .description {
+    text-align: center;
+  }
+  .section-3 .body img {
+    width: 100%;
+  }
+  .section-4 {
+    padding: 60px 0;
+  }
+  .section-4 .container {
+    max-width: none;
+  }
+  .section-4 .item {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .section-4 .item .date {
+    margin-top: 10px;
+  }
+  .section-4 .item .title {
+    font-size: 2rem;
+  }
+  .section-4 .item img {
+    max-width: none;
+    width: 100%;
+  }
+  .section-4 .row {
+    margin: 0;
+  }
+  .section-4 .col {
+    flex: auto;
+  }
+  .section-5 {
+    text-align: center;
+  }
+  .section-5 .title {
+    font-size: 3rem;
+  }
+  .section-5 .description {
+    margin: 16px 0;
+  }
+  .section-5 .description h4 {
+    font-size: 1.4rem;
+    margin: 16px 0;
+  }
+  .section-5 .col-4 {
+    flex: auto;
+    width: 100%;
+  }
+  .section-5 .col-8 {
+    flex: auto;
+    width: 100%;
+  }
+  .section-5 img {
+    max-width: 95%;
+  }
+  .section-6 .image {
+    margin: 32px 0;
+  }
+  .section-6 .col {
+    flex: auto;
+  }
+  .footer .container {
+    text-align: center;
+  }
+  .footer .collapse:not(.show) {
+    display: flex;
+  }
+  .footer .navbar-nav {
+    display: inline-block;
+  }
+  .footer a {
+    text-decoration: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
